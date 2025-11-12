@@ -182,3 +182,24 @@ p {
     color:var(--color-quaternary);
     text-align: center;
 }
+
+/* ===========================   
+    Proven Experience Across Industries
+=========================== */
+.proven-experience-across-industries{
+    padding: var(--text-3xl) 0;
+}
+.proven-experience-across-industries__h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: var(--spacing-xl);
+}
+.proven-experience-across-industries__logo {
+    max-width: 200px;
+}
+.proven-experience-across-industries__logo--logo-chattigo {
+    max-width: 140px;
+}
+.proven-experience-across-industries__logo--logo-fyo {
+    max-width: 260px;
+}
