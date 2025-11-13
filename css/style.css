@@ -150,6 +150,13 @@ p {
 .hero__container--columna-one {
     max-width: 590px;
 }
+.hero__column-row-one {
+  height: 70%;
+}
+.hero__column-row-two {
+  display: flex;
+  justify-content: center;
+}
 /* ===========================   
     Our certifications speak for themselves.
 =========================== */
