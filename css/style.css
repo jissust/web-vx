@@ -203,3 +203,50 @@ p {
 .proven-experience-across-industries__logo--logo-fyo {
     max-width: 260px;
 }
+
+/* ===========================   
+    Yes, We Stack Like Pros
+=========================== */
+.yes-we-stack-like-pros {
+    padding:4rem 0;
+    background-color: var(--color-primary);
+    background-image: url('../img/bg/bg-1c3f60.png');
+    background-repeat: no-repeat;
+    /*padding: 5rem 0 0 0;*/    
+}
+.yes-we-stack-like-pros__h1 {
+    color: var(--color-quaternary);
+    text-align: center;
+    margin: 0;
+    padding-bottom: var(--spacing-xl);
+}
+.yes-we-stack-like-pros__p {
+    color: var(--color-quaternary);
+    text-align: center;
+    margin: 0;
+    padding-bottom: var(--spacing-xl);
+}
+.swiper {
+  height: 150px;
+}
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
+.swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.swiper-slide img{
+    max-height: 60px !important;
+}
+.yes-we-stack-like-pros-swiper__carousel_1--AZUREAPIMGMT {
+    height: 100%;
+}
+/* evita que el mouse genere cualquier evento */
+.yes-we-stack-like-pros-swiper__carousel_1,
+.yes-we-stack-like-pros-swiper__carousel_2 {
+  pointer-events: none; 
+}
