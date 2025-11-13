@@ -117,7 +117,22 @@ p {
 .shadow-sm {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }*/
-
+/* ===========================
+   nav
+=========================== */
+.navbar {
+     background-color: var(--color-secondary);
+}
+.navbar__logo{ 
+  max-width: 80px;
+}
+.navbar_dropdown-menu {
+  background-color: var(--color-background); 
+}
+.navbar .nav-link {
+  color: var(--color-primary);
+  font-weight: 500;
+}
 /* ===========================
    hero
 =========================== */
