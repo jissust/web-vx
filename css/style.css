@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Articulat CF";
-  src: url("/src/assets/fonts/Articulat_CF_Normal.ttf") format("truetype");
+  src: url("../src/fonts/Articulat_CF_Normal.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,8 +24,8 @@
   --color-border: #e0e0e0;
 
   /* ==== TYPOGRAPHY ==== */
-  --font-base: "Articulat CF", "Roboto", sans-serif;
-  --font-heading: "Poppins", "Inter", sans-serif;
+  --font-base: "Poppins", "Inter", sans-serif;
+  --font-heading: "Articulat CF", "Roboto", sans-serif;
 
   /* ==== FONT SIZES ==== */
   --text-xs: 0.75rem;   /* 12px */
@@ -69,6 +69,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
   line-height: 1.6;
+  font-weight: 200;
 }
 
 /* ===========================
@@ -128,7 +129,8 @@ p {
     font-weight: 700;
 }
 .hero__p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
 }
 .hero__container--columna-one {
     max-width: 590px;
@@ -163,7 +165,7 @@ p {
 }
 .your-vision-engineered__h1 {
     text-align: center;
-    color: var(--color-quaternary);
+    color: var(--color-secondary);
     margin: 0;
     padding-bottom: var(--spacing-xl);
 }
@@ -215,7 +217,7 @@ p {
     /*padding: 5rem 0 0 0;*/    
 }
 .yes-we-stack-like-pros__h1 {
-    color: var(--color-quaternary);
+    color: var(--color-secondary);
     text-align: center;
     margin: 0;
     padding-bottom: var(--spacing-xl);
@@ -249,4 +251,33 @@ p {
 .yes-we-stack-like-pros-swiper__carousel_1,
 .yes-we-stack-like-pros-swiper__carousel_2 {
   pointer-events: none; 
+}
+
+/* ===========================   
+  Footer
+=========================== */
+footer {
+  padding: 50px 0;
+  background-color: var(--color-secondary);
+}
+.footer-container-logo {
+  max-width: 200px;
+}
+.footer__h3 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+.footer__h5 {
+  margin: 0;
+}
+.footer__social-media-icon {
+  max-width: 40px;
+}
+.footer__social-media-icon--clutch {
+  max-width: 30px;
+}
+footer p {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: var(--text-sm);
 }
