@@ -59,7 +59,24 @@
         </div>
         <div class="col-md-6 col-12 hero__column hero__column--two">
             <div class="hero__column-row-one">
-              
+              <div class="form">
+                <div id="step1" class="step active">
+                  <h3>1- What’s your team budget range?</h3>
+                  <button data-option="3k/Month">3k/Month</button>
+                  <button data-option="5k/Month">5k/Month</button>
+                  <button data-option="10k/Month">10k/Month</button>
+                  <button data-option="Still figuring out">Still figuring out</button>
+                </div>
+                <div id="step2" class="step"></div>
+                <div id="step3" class="step"></div>
+                <div id="finalStep" class="step">
+                  <h3>Work Email</h3>
+                  <input type="text" id="email" value="" placeholder="example@example.com" />
+                  <span id="error" class="error"></span>
+                  <button id="sendBtn" class="form_btn_back">Send</button>
+                </div>
+                <p id="result" style="margin-top: 1rem; font-weight: bold"></p>
+              </div>     
             </div>
             <div class="hero__column-row-two">
               <div class="hero__counters">
