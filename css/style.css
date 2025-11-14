@@ -157,6 +157,14 @@ p {
   display: flex;
   justify-content: center;
 }
+.hero__counters {
+  display: flex;
+  gap:20px;
+}
+.counter {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
 /* ===========================   
     Our certifications speak for themselves.
 =========================== */
