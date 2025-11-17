@@ -143,6 +143,11 @@ p {
     background-size: cover;
     background-position: center center;
 }
+.hero-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .hero__h1 {
     font-size: 40px;
     font-weight: 700;
@@ -304,7 +309,7 @@ button {
     background-color: var(--color-primary);
     background-image: url('../img/bg/bg-1c3f60.png');
     background-repeat: no-repeat;
-    padding: 5rem 0 0 0;
+    padding: 6rem 0 4rem 0;
     background-size: cover;
 }
 .your-vision-engineered__h1 {
@@ -333,7 +338,7 @@ button {
     Proven Experience Across Industries
 =========================== */
 .proven-experience-across-industries{
-    padding: var(--text-3xl) 0;
+    padding: 3rem 0 0 0;
 }
 .proven-experience-across-industries__h1 {
     text-align: center;
@@ -354,7 +359,7 @@ button {
     Yes, We Stack Like Pros
 =========================== */
 .yes-we-stack-like-pros {
-    padding:4rem 0;
+    padding:6rem 0 4rem 0;
     background-color: var(--color-primary);
     background-image: url('../img/bg/bg-1c3f60.png');
     background-repeat: no-repeat;
@@ -473,7 +478,11 @@ footer p {
     padding: 30px 0 0 0;
   }
 }
-
+@media (min-width: 1920px) { 
+  .hero-container {
+    max-width: 1800px;
+  }
+}
 /* 
 Subpages
 */
