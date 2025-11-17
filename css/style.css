@@ -152,8 +152,11 @@ p {
 .hero__h1 span {
   color: var(--color-secondary);
 }
+.hero h3 {
+  font-size: 1.25rem;
+}
 .hero__p {
-    font-size: var(--text-xl);
+    font-size: 14px;
     font-weight: 300;
     color: var(--color-quaternary);
 }
@@ -162,7 +165,7 @@ p {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 30px;
+  padding: 15px;
   margin-top: 70px;
 }
 .hero__column-row-one {
@@ -196,7 +199,7 @@ p {
 =========================== */
 .form {
   background: var(--color-background);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
@@ -421,24 +424,26 @@ footer p {
   font-weight: 400;
   font-size: var(--text-sm);
 }
-@media (min-width: 1200px) { 
-  .counter {
-    font-size: 4rem;
-  }
-  .hero__h1 {
-    font-size: 90px;
-  }
+/**/
+@media(min-width: 500px) {
   .hero__container--columna-one {
-    max-width: 600px;
+    padding: 30px;
   }
-  .hero__column-row-one {
-    padding: 0;
+  .hero h3 {
+    font-size: 1.75rem;
   }
-  .hero__column-row-two {
-    padding: 30px 0 0 0;
+  .form {
+    padding: 2rem;
   }
 }
-
+@media (min-width: 768px) {  
+  .hero__h1 {
+    font-size: 70px;
+  }
+  .hero__p {
+    font-size: var(--text-xl);
+  }
+}
 @media (min-width: 992px) { 
   .hero__container--columna-one {
     margin-top: 0;
@@ -449,9 +454,21 @@ footer p {
   .hero__column-row-two {
     padding: 20px;
   }
-}
-@media (min-width: 768px) {  
   .hero__h1 {
-    font-size: 70px;
+    font-size: 90px;
+  }
+}
+@media (min-width: 1200px) { 
+  .counter {
+    font-size: 4rem;
+  }
+  .hero__container--columna-one {
+    max-width: 600px;
+  }
+  .hero__column-row-one {
+    padding: 0;
+  }
+  .hero__column-row-two {
+    padding: 30px 0 0 0;
   }
 }
