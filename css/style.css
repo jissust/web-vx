@@ -494,6 +494,17 @@ Subpages
   height: 250px;
   margin-top: 72px;
 }
+.subpages-body {
+  padding: 0 0 50px 0;
+}
+.subpages-form {
+  padding: 80px 0 50px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.subpages-accordion {
+  padding: 50px 0 0 0;
+}
 .hero-subpage__h1 {
   color: var(--color-quaternary);
   font-size: 50px;
