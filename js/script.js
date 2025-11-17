@@ -130,11 +130,11 @@ step1.addEventListener("click", (e) => {
   step2.innerHTML = "";
   step2.innerHTML = `
     <h3>2- When are you planning to start?</h3>
-    <button data-option="ASAP (next 15 days)">ASAP (next 15 days)</button>
-    <button data-option="1 Month">1 Month</button>
-    <button data-option="3+ Months">3+ Months</button>
-    <button data-option="Just exploring">Just exploring</button>
-    <button data-option="back" class="form_btn_back" onclick="backBtn('step2', 'step1')">Back</button>
+    <button class="form_btn_option" data-option="ASAP (next 15 days)">ASAP (next 15 days)</button>
+    <button class="form_btn_option" data-option="1 Month">1 Month</button>
+    <button class="form_btn_option" data-option="3+ Months">3+ Months</button>
+    <button class="form_btn_option" data-option="Just exploring">Just exploring</button>
+    <button class="form_btn_back" data-option="back" onclick="backBtn('step2', 'step1')">Back</button>
   `;
 });
 
@@ -153,10 +153,10 @@ step2.addEventListener("click", (e) => {
   step3.innerHTML = "";
   step3.innerHTML = `
     <h3>3- Have you ever worked with Staff Augmentation?</h3>
-    <button data-option="Yes, I’m used to.">Yes, I’m used to.</button>
-    <button data-option="No, but I know how it works.">No, but I know how it works.</button>
-    <button data-option="No, I’ve never used it.">No, I’ve never used it.</button>
-    <button data-option="back" class="form_btn_back" onclick="backBtn('step3', 'step2')">Back</button>
+    <button class="form_btn_option" data-option="Yes, I’m used to.">Yes, I’m used to.</button>
+    <button class="form_btn_option" data-option="No, but I know how it works.">No, but I know how it works.</button>
+    <button class="form_btn_option" data-option="No, I’ve never used it.">No, I’ve never used it.</button>
+    <button class="form_btn_back" data-option="back" onclick="backBtn('step3', 'step2')">Back</button>
   `;
 });
 
