@@ -132,6 +132,10 @@ p {
 .navbar .nav-link {
   color: var(--color-primary);
   font-weight: 500;
+  font-family: var(--font-heading);
+}
+.navbar .dropdown-item {
+font-family: var(--font-heading);
 }
 /* ===========================
    hero
