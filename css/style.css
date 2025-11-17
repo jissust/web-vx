@@ -305,6 +305,7 @@ input:active {
     background-image: url('../img/bg/bg-1c3f60.png');
     background-repeat: no-repeat;
     padding: 5rem 0 0 0;
+    background-size: cover;
 }
 .your-vision-engineered__h1 {
     text-align: center;
@@ -357,7 +358,7 @@ input:active {
     background-color: var(--color-primary);
     background-image: url('../img/bg/bg-1c3f60.png');
     background-repeat: no-repeat;
-    /*padding: 5rem 0 0 0;*/    
+    background-size: cover;    
 }
 .yes-we-stack-like-pros__h1 {
     color: var(--color-secondary);
