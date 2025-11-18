@@ -169,7 +169,7 @@ font-family: var(--font-heading);
     font-weight: 300;
     color: var(--color-quaternary);
 }
-.hero__container--columna-one {
+.hero__container--column-one {
   max-width: 100%;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -475,7 +475,7 @@ footer p {
 }
 /**/
 @media(min-width: 500px) {
-  .hero__container--columna-one {
+  .hero__container--column-one {
     padding: 30px;
   }
   .hero h3 {
@@ -494,7 +494,7 @@ footer p {
   }
 }
 @media (min-width: 992px) { 
-  .hero__container--columna-one {
+  .hero__container--column-one {
     margin-top: 0;
   }
   .hero__column-row-one {
@@ -511,7 +511,7 @@ footer p {
   .counter {
     font-size: 4rem;
   }
-  .hero__container--columna-one {
+  .hero__container--column-one {
     max-width: 600px;
   }
   .hero__column-row-one {
