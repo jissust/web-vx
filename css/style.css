@@ -540,14 +540,13 @@ Subpages
 .subpages-body {
   padding: 0 0 50px 0;
 }
-.subpages-form {
-  padding: 80px 0 50px 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+hr {
+  height: 5px;
+  border-top: 1px solid var(--color-muted);
 }
-.subpages-accordion {
-  padding: 50px 0 0 0;
-}
+/*.subpages-accordion {
+  padding-top: 50px;
+}*/
 .hero-subpage__h1 {
   color: var(--color-quaternary);
   font-size: 50px;
@@ -576,10 +575,31 @@ textarea {
 }
 .btn-supages {
   background-color: var(--color-primary);
-  color: var(--color-quaternary);
+  color: var(--color-quaternary); 
+  padding: 0.75rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-weight: 500;
 }
 .accordion-button {
   outline: none !important;
   box-shadow: none !important;
   padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.subpage__image {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.subpage__form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.subpage__body {
+  padding-bottom: 50px;
 }
