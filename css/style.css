@@ -488,11 +488,14 @@ hr {
   height: 5px;
   border-top: 1px solid var(--color-muted);
 }
+.subpages-accordion .accordion-item {
+  border-bottom: 1px solid var(--color-border);
+}
 .subpages-accordion .accordion-item h2.accordion-header{
   margin-bottom: 0;
 }
 .subpages-accordion .accordion-item .accordion-body {
-  padding: 0;
+  padding: 0 0 10px 0;
 }
 .hero-subpage__h1 {
   color: var(--color-quaternary);
@@ -585,7 +588,10 @@ textarea {
   border:1px solid var(--color-border);
   border-radius: 5px;
   height: 100%;
-  background-color: var(--color-background); 
+  background-color: var(--color-background);
+  box-shadow: 1px 6px 16px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 6px 16px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 6px 16px -6px rgba(0,0,0,0.75); 
 }
 .subpage__img-rounded {
   border-radius: 5px;
