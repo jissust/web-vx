@@ -484,22 +484,29 @@ Subpages
   height: 250px;
   margin-top: 72px;
 }
-.subpages-body {
-  padding: 0 0 50px 0;
-}
 hr {
   height: 5px;
   border-top: 1px solid var(--color-muted);
 }
-/*.subpages-accordion {
-  padding-top: 50px;
-}*/
+.subpages-accordion .accordion-item h2.accordion-header{
+  margin-bottom: 0;
+}
+.subpages-accordion .accordion-item .accordion-body {
+  padding: 0;
+}
 .hero-subpage__h1 {
   color: var(--color-quaternary);
   font-size: 50px;
 }
 .container-subpage{
-  padding: 50px 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container-subpage h1,
+.container-subpage h2,
+.container-subpage h3 {
+  margin-top: 0;
+  margin-bottom:20px;
 }
 .container-subpage h3 {
   font-size: 18px;
@@ -544,10 +551,10 @@ textarea {
   padding-bottom: 50px;
 }
 .subpage__form {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding:0;
 }
 .subpage__body {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .microcopy {
@@ -557,7 +564,7 @@ textarea {
 .subpage_list-badges {
   display: grid;
   gap: 20px;
-  padding: 25px 0;
+  padding: 25px 0 0 0;
 }
 .subpage_badge {
   border: 1px solid var(--color-primary);
@@ -568,7 +575,39 @@ textarea {
   font-weight: 500;
   text-align: center;
 }
-
+.subpage_bg_1 {
+  background-color: #F5F5F5;
+}
+.subpage__cards {
+  position: relative;
+}
+.subpage-card {
+  border:1px solid var(--color-border);
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--color-background); 
+}
+.subpage__img-rounded {
+  border-radius: 5px;
+}
+.subpage__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.subpage-card-head {
+  min-height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+}
+.subpage-card-head h3 {
+  margin: 0;
+}
+.subpage-card-body {
+  padding:20px;
+}
 /**/
 @media(min-width: 500px) {
   .hero__container--column-one {
@@ -585,6 +624,10 @@ textarea {
   }
 }
 @media (min-width: 768px) {  
+  .container-subpage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .hero__h1 {
     font-size: 70px;
   }
