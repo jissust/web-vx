@@ -342,12 +342,11 @@ button {
     Proven Experience Across Industries
 =========================== */
 .proven-experience-across-industries{
-    padding: 3rem 0 0 0;
+    padding: 2.5rem 0 0 0;
 }
 .proven-experience-across-industries__h1 {
     text-align: center;
     margin: 0;
-    padding-bottom: var(--spacing-xl);
 }
 .proven-experience-across-industries__logo {
     max-width: 200px;
