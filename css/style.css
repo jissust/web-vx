@@ -153,7 +153,7 @@ font-family: var(--font-heading);
   padding: 0 20px;
 }
 .hero__h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--color-quaternary);
     margin:0 0 20px 0;
@@ -178,7 +178,7 @@ font-family: var(--font-heading);
   margin-top: 70px;
 }
 .hero__column-row-one {
-  /*height: 60%;*/
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -188,6 +188,7 @@ font-family: var(--font-heading);
   display: flex;
   justify-content: center;
   padding: 0 20px;
+  height: auto;
 }
 .hero__counters {
   display: flex;
@@ -198,10 +199,14 @@ font-family: var(--font-heading);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   height: fit-content;
+  max-width: 500px;
 }
 .counter {
   font-size: 2rem;
   font-weight: 600;
+}
+.counter__text {
+  font-size: 14px;
 }
 /* ===========================   
     Form hero
@@ -211,7 +216,7 @@ font-family: var(--font-heading);
   padding-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   text-align: center;
   position: relative;
@@ -305,6 +310,23 @@ button {
   transform: translateX(0);
   pointer-events: auto;
   max-height: 500px;
+}
+.hero_h1_container {
+  position: relative;
+  overflow: hidden;
+}
+.hero_h1_item.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  max-height: fit-content;
+}
+
+.hero_h1_item {
+  transform: translateX(40px);
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease; 
 }
 .error {
   color: red;
@@ -475,7 +497,7 @@ footer {
   background-color: var(--color-secondary);
 }
 .footer-container-logo {
-  max-width: 200px;
+  max-width: 130px;
 }
 .footer__h3 {
   margin-top: 0;
@@ -655,7 +677,10 @@ textarea {
     display: flex;
   }
 }
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
+  .footer-container-logo {
+    max-width: 200px;
+  }  
   .container-subpage {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -666,6 +691,9 @@ textarea {
   .hero__p {
     font-size: var(--text-xl);
   }
+  .counter__text {
+    font-size: 16px;
+  }
 }
 @media (min-width: 992px) { 
   .hero__container--column-one {
@@ -673,9 +701,11 @@ textarea {
   }
   .hero__column-row-one {
     align-items: end;
+    height: 66%;
   }
   .hero__column-row-two {
     padding: 20px;
+    height: 30%;
   }
   .hero__h1 {
     font-size: 90px;
@@ -683,7 +713,7 @@ textarea {
 }
 @media (min-width: 1200px) { 
   .counter {
-    font-size: 4rem;
+    font-size: 50px;
   }
   .hero__container--column-one {
     max-width: 600px;
@@ -692,7 +722,7 @@ textarea {
     padding: 0;
   }
   .hero__column-row-two {
-    padding: 30px 0 0 0;
+    /*padding: 40px 0 0 0;*/
   }
 }
 @media (min-width: 1920px) { 
