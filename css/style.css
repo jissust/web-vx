@@ -208,8 +208,8 @@ font-family: var(--font-heading);
 =========================== */
 .form {
   background: var(--color-background);
-  padding: 1rem;
-  border-radius: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 100%;
@@ -217,8 +217,29 @@ font-family: var(--font-heading);
   position: relative;
   overflow: hidden;
 }
+.form__circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.form__circle-container {
+  display: flex;
+  gap: 10px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.form__circle--red{
+  background-color: #c86d74;
+}
+.form__circle--yellow {
+  background-color: #dac268;
+}
+.form__circle--green {
+  background-color: #80c16d;
+}
 .form h3 {
-  margin: 0 0 20px 0;
+  margin: 20px 0;
 }
 button {
   padding: 0.75rem;
@@ -276,6 +297,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.30rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .step.active {
   opacity: 1;
@@ -622,7 +645,11 @@ textarea {
     font-size: 1.75rem;
   }
   .form {
-    padding: 2rem;
+    padding-bottom:2rem;
+  }
+  .step {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   .subpage_list-badges {
     display: flex;
