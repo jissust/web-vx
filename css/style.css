@@ -586,13 +586,6 @@ textarea {
   text-decoration: none;
   font-weight: 500;
 }
-.accordion-button {
-  outline: none !important;
-  box-shadow: none !important;
-  padding: 20px 0;
-  font-size: 18px;
-  font-weight: 600;
-}
 .subpage__image {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -621,6 +614,7 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+  transition: all 0.6s ease;
 }
 .subpage_badge:hover {
   background-color: var(--color-primary);
@@ -672,6 +666,73 @@ textarea {
   display: flex;
   justify-content: center;  
 }
+.accordion_section {
+  background-image: url("../img/subpages/staff_augmentation_2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+.accordion-button {
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.accordion-button:not(.collapsed) {
+  color: #FFFFFF;
+}
+.subpages-accordion .accordion-item .accordion-body {
+  color: #FFFFFF;
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../img/subpages/arrow-accordion.svg");
+}
+.staff_augmentation_use_cases {
+  padding: 0;
+}
+.staff_augmentation_use_cases__circle{
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px;
+  transition: all 0.6s ease;
+}
+.staff_augmentation_use_cases__circle:hover{
+  border:1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-quaternary);
+}
+.staff_augmentation_use_cases__col {
+  display: flex;
+}
+.staff_augmentation_use_cases-col-one {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.staff_augmentation_use_cases-col-two {
+  background-image: url('../img/subpages/staff_augmentation_1.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(1),
+.staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(2),
+.staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(3),
+.staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(4) {
+  justify-content: center;
+}
 /**/
 @media(min-width: 500px) {
   .hero__container--column-one {
@@ -692,12 +753,20 @@ textarea {
   }
 }
 @media (min-width: 768px) {
+  .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(1),
+  .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(3) {
+    justify-content: end;
+  }
+  .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(2),
+  .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(4) {
+    justify-content: start;
+  }
   .footer-container-logo {
     max-width: 200px;
   }  
   .container-subpage {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
   .hero__h1 {
     font-size: 70px;
