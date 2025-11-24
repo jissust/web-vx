@@ -61,31 +61,62 @@
       </div>
     </nav>
     
-    <div class="hero-subpage">
+    <!--<div class="hero-subpage">
       <div class="container h-100 d-flex justify-content-start align-items-center">
         <h1 class="hero-subpage__h1">Staff Augmentation</h1>
       </div>   
-    </div>
+    </div>-->
     <div class="container-subpage">  
-      <div class="container subpage__body">
-        <h1>Staff Augmentation in LATAM that Scales with Your Projects</h1>
-        <h2>Flexible Teams, Real Impact</h2>
-        <p>
-          Delivering faster without expanding your internal structure is possible. At <b>Virtual Xpert, we
-          provide bilingual, pre‑vetted IT professionals</b> who integrate into your team for the exact time you
-          need them — reducing hiring friction and keeping full control of your projects. 
-        </p>
-        <p>    
-          With our model lets you scale
-        </p>
-        <ul >
-          <li><b>Scale up or down in 48–72 hours</b></li>
-          <li><b>Work in your timezone with LATAM-based teams</b></li>
-          <li><b>Pay only for the hours actually used</b></li>
-        </ul>
-        <p  class="pt-4">
-          <a class="btn-supages" href="#form">Get in touch</a>
-        </p>
+      <div class="container subpage__body flexble-teams">
+        <h1 class="pb-3">Staff Augmentation in LATAM that Scales with Your Projects</h1>
+        <div class="row">
+          <div class="col-12 col-lg-6 flexble-teams__col-one">
+            <div class="flexble-teams__col-one-container pb-lg-0 pb-5">
+              <h2>Flexible Teams, Real Impact</h2>
+              <p>
+                Delivering faster without expanding your internal structure is possible. At <b>Virtual Xpert, we
+                provide bilingual, pre‑vetted IT professionals</b> who integrate into your team for the exact time you
+                need them.
+                </p>
+              <p>    
+                Our model lets you scale:
+              </p>
+              <ul class="flexble-teams__col-one-ul">
+                <li><b>Up or down in 48–72 hours</b></li>
+                <li><b>Work in your timezone with LATAM-based teams</b></li>
+                <li><b>Pay <span>only</span> for the hours actually used</b></li>
+              </ul>
+              <p  class="pt-4">
+                <a class="btn-supages" href="#form">Get in touch</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 flexble-teams__col-two">
+            <div class="form">
+              <div class="form__circle-container">
+                <div class="form__circle form__circle--red"></div>
+                <div class="form__circle form__circle--yellow"></div>
+                <div class="form__circle form__circle--green"></div>
+              </div>
+              <div id="step1" class="step active">
+                <h3>1- What’s your team budget range?</h3>
+                <button class="form_btn_option" data-option="3k/Month">3k/Month</button>
+                <button class="form_btn_option" data-option="5k/Month">5k/Month</button>
+                <button class="form_btn_option" data-option="10k/Month">10k/Month</button>
+                <button class="form_btn_option" data-option="Still figuring out">Still figuring out</button>
+              </div>
+              <div id="step2" class="step"></div>
+              <div id="step3" class="step"></div>
+              <div id="finalStep" class="step">
+                <h3>Work Email</h3>
+                <input type="text" id="email" value="" placeholder="example@example.com" />
+                <span id="error" class="error"></span>
+                <button id="sendBtn" class="form_btn_back">Send</button>
+              </div>
+              <p id="result" style="margin-top: 1rem; font-weight: bold"></p>
+            </div>  
+          </div>
+        </div>
       </div>
       <div class="subpage__body subpage_bg_1">
         <div class="container">  
@@ -153,16 +184,67 @@
           </div>
         </div>
       </div>
-      <div class="subpage__body subpage_bg_1">
+
+      <div class="proven-experience-across-industries pb-5">
         <div class="container">
-          <h2>A Scalable Model for Modern Tech Teams</h2>
+          <h1 class="proven-experience-across-industries__h1">
+            Proven Experience Across Industries
+          </h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/proven-experience-across-industries/logo-chattigo.svg"
+                alt="Chattigo"
+                class="proven-experience-across-industries__logo proven-experience-across-industries__logo--logo-chattigo pb-md-0 pb-5"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/proven-experience-across-industries/logo-firma.svg"
+                alt="Firma Laboral"
+                class="proven-experience-across-industries__logo pb-md-0 pb-5"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/proven-experience-across-industries/logo-fyo.svg"
+                alt="Fyo"
+                class="proven-experience-across-industries__logo proven-experience-across-industries__logo--logo-fyo pb-md-0 pb-5"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/proven-experience-across-industries/logo-rio.png"
+                alt="Rio"
+                class="proven-experience-across-industries__logo pb-md-0 pb-5"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="form"></div>
+      </div>
+
+      <div class="subpage__body subpage_bg_1">
+          
+          <div class="container">
+          <!--<h2>A Scalable Model for Modern Tech Teams</h2>
           <div id="form"></div>
           <p class="mb-5">
               Staff Augmentation isn’t just outsourcing — it’s an extension of your culture and processes. We help
               companies across LATAM and beyond maintain agility and technical excellence while keeping
               flexibility at the core.
           </p>
-          
+        -->
           <h2>Let’s Build Your Next Team</h2> 
           <div class="subpage__form">
             <form action="">
@@ -235,7 +317,7 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
                       <div class="accordion-body">
-                        Backend/Frontend/Full‑stack, DevOps/SRE, QA (manual & automation), Data (analytics/engineering), PM/PO, UX/UI, and more                    
+                        Backend/Frontend/Full‑stack, DevOps/SRE, QA (manual & automation), Data (analytics/engineering), PM/PO, UX/UI, and <b>250+</b>.                  
                       </div>
                     </div>
                   </div>
@@ -259,7 +341,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                       <div class="accordion-body">
-                        Yes. You manage roadmaps and quality. We handle sourcing, HR, payroll, and continuity
+                        Yes. You manage roadmaps and quality. We handle sourcing, HR, payroll, and continuity.
                       </div>
                     </div>
                   </div>
