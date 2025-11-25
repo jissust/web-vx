@@ -215,9 +215,6 @@ font-family: var(--font-heading);
   height: fit-content;
   max-width: 500px;
 }
-.hero__counters--subpage {
-  color: var(--color-primary);
-}
 .counter {
   font-size: 2rem;
   font-weight: 600;
@@ -566,7 +563,7 @@ hr {
   color: var(--color-quaternary);
   font-size: 50px;
 }
-.container-subpage{
+.container-subpage {
   padding-top: 75px;
   padding-bottom: 0;
   font-weight: 400;
@@ -678,6 +675,16 @@ textarea {
 .subpage-card-body {
   padding:20px;
 }
+.subpage_certifications .certifications__logo--aws-partner {
+  max-width: 100px;
+}
+.subpage_certifications .certifications__logo--microsoft-solutions-partner {
+  max-width: 200px;
+}
+.subpage_certifications .certifications__logo--oracle-partner{
+  max-width: 250px;
+}
+
 .flexble-teams__col-one-container {
   max-width: 570px;
 }
@@ -769,6 +776,17 @@ textarea {
   }
   .subpage_list-badges {
     display: flex;
+  }
+}
+@media(min-width: 576px) { 
+  .subpage_certifications .certifications__logo--aws-partner{
+    max-width: 70px;
+  }
+  .subpage_certifications .certifications__logo--microsoft-solutions-partner {
+    max-width: 130px;
+  }
+  .subpage_certifications .certifications__logo--oracle-partner{
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
