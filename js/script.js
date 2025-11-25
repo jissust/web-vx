@@ -129,7 +129,7 @@ step1.addEventListener("click", (e) => {
 
   step2.innerHTML = "";
   step2.innerHTML = `
-    <h3>2- When are you planning to start?</h3>
+    <h3 class="hero__h3">2- When are you planning to start?</h3>
     <button class="form_btn_option" data-option="ASAP (next 15 days)">ASAP (next 15 days)</button>
     <button class="form_btn_option" data-option="1 Month">1 Month</button>
     <button class="form_btn_option" data-option="3+ Months">3+ Months</button>
@@ -152,7 +152,7 @@ step2.addEventListener("click", (e) => {
 
   step3.innerHTML = "";
   step3.innerHTML = `
-    <h3>3- Have you ever worked with Staff Augmentation?</h3>
+    <h3 class="hero__h3">3- Have you ever worked with Staff Augmentation?</h3>
     <button class="form_btn_option" data-option="Yes, I’m used to.">Yes, I’m used to.</button>
     <button class="form_btn_option" data-option="No, but I know how it works.">No, but I know how it works.</button>
     <button class="form_btn_option" data-option="No, I’ve never used it.">No, I’ve never used it.</button>

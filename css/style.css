@@ -142,10 +142,19 @@ font-family: var(--font-heading);
 =========================== */
 .hero {
     height: 100vh;
-    background-image: url('../img/bg/fondo_1.jpg');
+    background-image: url('../img/bg/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top;
+    /*background: linear-gradient(350deg,#305778 20%,#C1EDDD 100%);*/
+}
+.hero_1 {
+    height: 100vh;
+    /*background-image: url('../img/bg/hero.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background: linear-gradient(350deg,#305778 20%,#C1EDDD 100%);
 }
 .hero-container {
   max-width: 100%;
@@ -153,21 +162,26 @@ font-family: var(--font-heading);
   padding: 0 20px;
 }
 .hero__h1 {
-    font-size: 30px;
+    font-size: calc(1.375rem + 1.5vw);
     font-weight: 700;
     color: var(--color-quaternary);
     margin:0 0 20px 0;
+    text-shadow: 3px 2px 9px rgba(28,63,96,0.6);
 }
 .hero__h1 span {
   color: var(--color-secondary);
 }
-.hero h3 {
+/*.hero h3 {
+  font-size: 1.25rem;
+}*/
+.hero__h3 {
   font-size: 1.25rem;
 }
 .hero__p {
     font-size: 14px;
     font-weight: 300;
     color: var(--color-quaternary);
+    text-shadow: 3px 2px 9px rgba(28,63,96,0.6);
 }
 .hero__container--column-one {
   max-width: 100%;
@@ -204,9 +218,12 @@ font-family: var(--font-heading);
 .counter {
   font-size: 2rem;
   font-weight: 600;
+  text-shadow: 3px 2px 9px rgba(28,63,96,0.6);
 }
 .counter__text {
   font-size: 14px;
+  font-weight: 500;
+  text-shadow: 3px 2px 9px rgba(28,63,96,0.6);
 }
 /* ===========================   
     Form hero
@@ -738,9 +755,6 @@ textarea {
   .hero__container--column-one {
     padding: 30px;
   }
-  .hero h3 {
-    font-size: 1.75rem;
-  }
   .form {
     padding-bottom:2rem;
   }
@@ -753,6 +767,12 @@ textarea {
   }
 }
 @media (min-width: 768px) {
+  /*.hero h3 {
+    font-size: 1.75rem;
+  }*/
+  .hero__h3 {
+    font-size: 1.75rem;
+  }
   .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(1),
   .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(3) {
     justify-content: end;
@@ -769,7 +789,7 @@ textarea {
     padding-bottom: 0;
   }
   .hero__h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   .hero__p {
     font-size: var(--text-xl);
@@ -794,7 +814,7 @@ textarea {
     height: 30%;
   }
   .hero__h1 {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 @media (min-width: 1200px) { 
@@ -802,7 +822,7 @@ textarea {
     font-size: 50px;
   }
   .hero__container--column-one {
-    max-width: 600px;
+    max-width: 100%;
   }
   .hero__column-row-one {
     padding: 0;
