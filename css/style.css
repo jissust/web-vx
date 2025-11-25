@@ -168,10 +168,10 @@ font-family: var(--font-heading);
     margin:0 0 20px 0;
     text-shadow: 3px 2px 9px rgba(28,63,96,0.6);
 }
-.hero__h1 span {
+/*.hero__h1 span {
   color: var(--color-secondary);
 }
-/*.hero h3 {
+.hero h3 {
   font-size: 1.25rem;
 }*/
 .hero__h3 {
@@ -344,6 +344,7 @@ button {
   opacity: 0;
   max-height: 0;
   transition: opacity 0.4s ease, transform 0.4s ease; 
+  color: var(--color-secondary);
 }
 .error {
   color: red;
@@ -771,7 +772,7 @@ textarea {
     font-size: 1.75rem;
   }*/
   .hero__h3 {
-    font-size: 1.75rem;
+    font-size: 1.50rem;
   }
   .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(1),
   .staff_augmentation_use_cases-col-one .staff_augmentation_use_cases__col:nth-child(3) {
