@@ -131,7 +131,7 @@ p {
 }
 .navbar .nav-link {
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 600;
   font-family: var(--font-heading);
 }
 .navbar .dropdown-item {
