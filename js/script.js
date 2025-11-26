@@ -77,7 +77,7 @@ const swiper_carousel_2 = new Swiper(
  * Count
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".counter");
+  const counters = document.querySelectorAll(".counter_number");
 
   counters.forEach((counter) => {
     const updateCount = () => {
@@ -226,26 +226,3 @@ const validateEmail = (email) => {
   const regex = /^[^@]+@[^@]+\.[^@]+$/;
   return regex.test(email.trim());
 };
-
-/**
- * Change words
- */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const items = document.querySelectorAll(".hero_h1_item");
-  let index = 0;
-
-  setInterval(() => {
-    // remover active del actual
-    items[index].classList.remove("active");
-
-    // pasar al siguiente
-    index = (index + 1) % items.length;
-
-    // activar el siguiente
-    items[index].classList.add("active");
-
-  }, 3000); // cada 3 segundos
-
-});
