@@ -472,6 +472,9 @@ button {
   Blog
 =========================== */
 .blog {
+  display: none;
+}
+.blog {
   padding: 50px 0 100px 0;
 }
 .blog__h1 {
