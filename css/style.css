@@ -353,21 +353,50 @@ button {
 /* ===========================   
     Our certifications speak for themselves.
 =========================== */
+.certifications__item {
+  min-height: 150px;
+  transition: all 0.6s ease;
+}
+.certifications__item svg g{
+  fill: #1c3f60;
+}
+.certifications__item:hover {
+  background-color: #1c3f60;
+}
+.certifications__item:hover svg g{
+  fill: #FFFFFF;
+}
 .certifications__h1 {
     font-size: var(--text-2xl);
     text-align: center;
 }
+.certifications__h2 {
+  text-align: center;
+  font-size: 20px;
+}
 .certifications {
     padding: var(--text-3xl) 0;
 }
+
+.certifications_col-1 {
+  
+}
+.certifications_col-2 {
+    background-image: url("../img/bg/certifications-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    min-height: 400px;
+    border-radius: 10px 0 0 10px;
+}
 .certifications__logo--aws-partner {
-    max-width: 100px;
+    max-width: 130px;
 }
 .certifications__logo--microsoft-solutions-partner {
     max-width: 200px;
 }
 .certifications__logo--oracle-partner {
-    max-width: 250px;
+    max-width: 220px;
 }
 /* ===========================   
     Your Vision, Engineered
@@ -833,6 +862,9 @@ textarea {
   }
 }
 @media (min-width: 992px) {
+  .certifications_col-1 {
+    padding-left: calc((100vw - 960px) / 2);
+  }
   .navbar__logo {
     max-width: 70px;
   }
@@ -854,6 +886,9 @@ textarea {
   }
 }
 @media (min-width: 1200px) { 
+  .certifications_col-1 {
+    padding-left: calc((100vw - 1140px) / 2);
+  }
   .counter {
     font-size: 40px;
   }
@@ -865,6 +900,11 @@ textarea {
   }
   .hero__column-row-two {
     /*padding: 40px 0 0 0;*/
+  }
+}
+@media (min-width: 1400px){
+  .certifications_col-1 { 
+    padding-left: calc((100vw - 1320px) / 2);
   }
 }
 @media (min-width: 1920px) { 
