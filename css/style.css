@@ -862,9 +862,6 @@ textarea {
   }
 }
 @media (min-width: 992px) {
-  /*.certifications__item:hover {
-    background-color: #1c3f60;
-  }*/
   .certifications__item:hover {
     background-color: #1c3f60;
   }
