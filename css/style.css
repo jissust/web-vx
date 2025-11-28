@@ -364,7 +364,7 @@ button {
   background-color: #FFFFFF;
 }
 .certifications__item:hover svg g{
-  fill: #FFFFFF;
+  fill: #1c3f60;
 }
 .certifications__h1 {
     font-size: var(--text-2xl);
@@ -862,8 +862,14 @@ textarea {
   }
 }
 @media (min-width: 992px) {
+  /*.certifications__item:hover {
+    background-color: #1c3f60;
+  }*/
   .certifications__item:hover {
     background-color: #1c3f60;
+  }
+  .certifications__item:hover svg g{
+    fill: #FFFFFF;
   }
   .certifications_col-1 {
     padding-left: calc((100vw - 960px) / 2);
