@@ -814,6 +814,9 @@ section {
   font-weight: 700;
   margin: 0;
 }
+.section_h1--cloud-migration {
+  font-size: 3rem;
+}
 .section_card {
   text-align: center;
   border: 1px solid var(--color-border);
