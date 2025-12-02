@@ -182,7 +182,7 @@ document.getElementById("sendBtn").addEventListener("click", () => {
     return;
   }
   selectEmail = document.getElementById("email").value;
-  result.innerHTML = `<div>Thank you, our CTO will be in touch with you.</div><div>1- ${seleccionPrincipal}</div><div> 2- ${seleccionSecundaria}</div><div> 3- ${selecctionTerciaria}</div><div> 4- email: ${selectEmail}</div>`;
+  result.innerHTML = `<div>Thank you, our team will contact you.</div>`;
   finalStep.classList.remove("active");
   deleteSelection(step1);
   resetForm();
