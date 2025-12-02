@@ -434,7 +434,7 @@ button {
     Proven Experience Across Industries
 =========================== */
 .proven-experience-across-industries{
-    padding: 2.5rem 0 0 0;
+    padding: 4.4rem 0 0 0;
 }
 .proven-experience-across-industries__h1 {
     text-align: center;
@@ -645,8 +645,8 @@ textarea {
   padding:0;
 }
 .subpage__body {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 70px;
 }
 .microcopy {
   font-weight: 600;
@@ -872,7 +872,7 @@ textarea {
     padding-left: calc((100vw - 960px) / 2);
   }
   .navbar__logo {
-    max-width: 70px;
+    max-width: 60px;
   }
   .flexble-teams__col-two {
     justify-content: end;
