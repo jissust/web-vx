@@ -839,7 +839,7 @@ section {
   background-repeat: no-repeat;
 }
 .accordion_section--ai-development {
-  background-image: url(../ai-development/img/bg-ia-6.jpg);
+  background-image: url(../ai-development/img/bg-ia-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1077,7 +1077,7 @@ section {
 }
 @media (min-width: 1200px) {
   .common-ai-use-cases {
-    background-image: url(../ai-development/img/bg-ia-1.png);
+    background-image: url(../ai-development/img/bg-ia-1.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
