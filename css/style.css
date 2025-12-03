@@ -583,6 +583,12 @@ hr {
   height: 5px;
   border-top: 1px solid var(--color-muted);
 }
+.subpages-accordion--blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0 30px;
+}
 .subpages-accordion .accordion-item {
   border-bottom: 1px solid var(--color-border);
 }
@@ -740,6 +746,9 @@ textarea {
   background-position: center;
   padding: 120px 0;
 }
+.accordion_section--bg-cloud-migration {
+  background-image: url("../cloud-migration/img/bg-accordion.webp");
+}
 .accordion-button {
   outline: none !important;
   box-shadow: none !important;
@@ -832,7 +841,8 @@ section {
 .section_hero {
   padding: 30px 0 70px 0;
 }
-.common-ai-use-cases {
+.common-ai-use-cases,
+.bg-left-gradient {
   background-image: none;
   background-position: right;
   background-size: contain;
@@ -1086,6 +1096,14 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
   } 
+  .bg-left-gradient {
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .typical-use-cases {
+    background-image: url(../cloud-migration/img/bg-gradient-left.webp);
+  }
   .certifications_col-1 {
     padding-left: calc((100vw - 1140px) / 2);
   }
