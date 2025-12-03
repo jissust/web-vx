@@ -939,6 +939,10 @@ section {
   color: var(--color-quaternary);
 }
 
+.cloud-platforms__img {
+  max-width: 200px;
+}
+
 /* Línea horizontal desktop */
 @media (min-width: 992px) {
   .timeline-container::before {
