@@ -878,6 +878,30 @@ section {
   border-radius: 50%;
   margin-bottom: 50px;
 }
+.internal_links{
+  padding: 20px 0;
+  background: #1c3f60;
+}
+.internal_links__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.internal_links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #FFFFFF;
+  transition: all 0.6s ease;
+}
+.internal_links a:hover {
+  color: var(--color-secondary);
+}
+.separator {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
 /* Iconos en círculos */
 .timeline-icon {
   width: 25px;
