@@ -295,7 +295,8 @@ button {
 .form input,
 .form input:focus,
 .form input:active,
-select {
+select,
+.checkbox {
   padding: 0.75rem;
   border-radius: 3px;
   cursor: pointer;
@@ -307,6 +308,74 @@ select {
   text-align: left;
   outline: none;
 }
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-secondary);
+}
+/* Firefox */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: var(--color-secondary);
+}
+/* Internet Explorer / Edge Legacy */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: var(--color-secondary);
+}
+/* Safari (iPhone / iPad) */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-secondary);
+}
+
+.chk-container {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+/* Oculta el checkbox real */
+.chk-container input {
+  display: none;
+}
+
+/* Caja del checkbox personalizado */
+.chk-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-secondary); /* borde */
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+  background: #53d39830; /* fondo inicial */
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Hover */
+.chk-container:hover .chk-custom {
+  background: #53d39830;
+}
+
+/* Estado checked */
+.chk-container input:checked + .chk-custom {
+  background: var(--color-secondary); /* fondo cuando está activado */
+  border-color: var(--color-secondary);
+}
+
+/* Ícono de check */
+.chk-container input:checked + .chk-custom::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+
 .step {
   opacity: 0;
   max-height: 0;
