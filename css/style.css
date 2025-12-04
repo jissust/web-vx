@@ -585,7 +585,7 @@ hr {
 }
 .subpages-accordion--blur {
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 0 30px;
 }
@@ -752,6 +752,9 @@ textarea {
 .accordion_section--devops-automation {
   background-image: url("../devops-automation/img/bg-footer.jpg");
 }
+.accordion_section--mergers-acquisitions-tech-integration {
+  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.webp");
+}
 .accordion-button {
   outline: none !important;
   box-shadow: none !important;
@@ -765,6 +768,7 @@ textarea {
 }
 .subpages-accordion .accordion-item .accordion-body {
   color: #FFFFFF;
+  font-weight: 400;
 }
 .accordion-button::after,
 .accordion-button:not(.collapsed)::after {
@@ -1109,6 +1113,12 @@ section {
   }
   .common-devops-use-cases {
     background-image: url("../devops-automation/img/bg-gradient-left.webp");
+  }
+  .where-we-help-most {
+    background-image: url("../mergers-acquisitions-tech-integration/img/bg-gradient-left.jpg");
+  }
+  .what-we-do {
+    background-image: url("../about-us/img/bg-gradient-left.jpg");
   }
   .certifications_col-1 {
     padding-left: calc((100vw - 1140px) / 2);
