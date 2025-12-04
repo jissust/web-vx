@@ -755,6 +755,9 @@ textarea {
 .accordion_section--mergers-acquisitions-tech-integration {
   background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.webp");
 }
+.accordion_section--digital-transformation {
+  background-image:url("../digital-transformation/img/bg-accordion.jpg")
+}
 .accordion-button {
   outline: none !important;
   box-shadow: none !important;
@@ -1119,6 +1122,9 @@ section {
   }
   .what-we-do {
     background-image: url("../about-us/img/bg-gradient-left.jpg");
+  }
+  .common-scenarios {
+    background-image: url("../digital-transformation/img/bg-gradient-left.jpg");
   }
   .certifications_col-1 {
     padding-left: calc((100vw - 1140px) / 2);
