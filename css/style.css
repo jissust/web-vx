@@ -825,6 +825,10 @@ section {
   padding: 100px 0;
   overflow: hidden;
 }
+.section__h2 {
+  margin: 0;
+  padding: 0 0 2rem 0;
+}
 .section_hero_img {
   max-width: 500px;
   width: 100%;
