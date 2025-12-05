@@ -123,6 +123,9 @@ p {
 .navbar {
      background-color: var(--color-secondary);
 }
+.navbar-nav .dropdown-menu {
+  background-color: #F5F5F5;
+}
 .navbar__logo{ 
   max-width: 50px;
 }
