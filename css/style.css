@@ -176,7 +176,8 @@ ul > li > a.dropdown-item {
 }
 ul > li:hover > a.nav-link::after,
 ul > li:hover > a.dropdown-item::after,
-ul > li > a.nav-link.active::after {
+ul > li > a.nav-link.active::after,
+ul > li > a.dropdown-item.active::after {
   left: 0;
 }
 /* ===========================
