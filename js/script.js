@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       menuLinks.forEach(link => {
         link.classList.remove("active");
-        if(!subpage && (link.dataset.section === section && link.dataset.subpages === "")) {
-          alert(`Section: ${section} - Subpage: ${subpage} - link.dataset.section: ${link.dataset.section} - link.dataset.subpages: ${link.dataset.subpages}  `);
-
+        if(link.dataset.section === "services") {
           link.classList.add("active");
         }
       })
