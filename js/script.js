@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Seleccionar todos los enlaces del menú (nav-link y dropdown-item)
   const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
-  console.log("Menu Links:", menuLinks);
   // 2. Agregar evento de click a cada enlace
   menuLinks.forEach(link => {
     link.addEventListener("click", () => {
