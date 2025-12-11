@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Seleccionar todos los enlaces del menú (nav-link y dropdown-item)
+  console.log(window.location.href.split("/"));
   const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
   // 2. Agregar evento de click a cada enlace
   menuLinks.forEach(link => {
@@ -39,11 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("menu_section", section);
       localStorage.setItem("menu_subpage", subpage);
 
-      menuLinks.forEach(link => {
-        link.classList.remove("active");
-        if(link.dataset.section === "services") {
-          link.classList.add("active");
-        }
+      menuLinks.forEach(linkItem => {
+        linkItem.classList.remove("active");
       })
       link.classList.add("active");
     });
