@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
       menuLinks.forEach(link => {
         link.classList.remove("active");
         if(!subpage && (link.dataset.section === section && link.dataset.subpages === "")) {
+          console.log("section", section)
+          console.log("link.dataset.section", link.dataset.section)
+          console.log("subpage", subpage)
+          console.log("link.dataset.subpages", link.dataset.subpages)
+
           link.classList.add("active");
         }
       })
