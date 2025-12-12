@@ -27,36 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  selectSection();
+  const menuItems = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
+  menuItems.forEach(link => {
+    link.addEventListener("click", () => {
+      
+      setTimeout(() => {
+        selectSection();
+      }, "250");
+    });
+  });
+
   // 1. Seleccionar todos los enlaces del menú (nav-link y dropdown-item)
-  let urls = [
-    "about-us",
-    "proven-experience-across-industries",
-    "contact",
-    "staff-augmentation",
-    "ai-development",
-    "cloud-migration",
-    "devops-automation",
-    "mergers-acquisitions-tech-integration",
-    "digital-transformation" 
-  ]
 
-  const currentUrl = window.location.href;
-  const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
-
-  menuLinks.forEach(linkItem => {
-    linkItem.classList.remove("active");
-  })
-
-  urls.forEach(url => { 
-    if(currentUrl.includes(url)){
-      console.log("Current URL includes:", url);
-      menuLinks.forEach(linkItem => {
-        if(linkItem.dataset.section === url || linkItem.dataset.subpages === url){
-          linkItem.classList.add("active");
-        }
-      })    
-    }
-  })
   /*const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
   // 2. Agregar evento de click a cada enlace
   menuLinks.forEach(link => {
@@ -94,3 +77,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }*/
 });
+
+const selectSection = () => {
+  let urls = [
+    "about-us",
+    "proven-experience-across-industries",
+    "contact",
+    "staff-augmentation",
+    "ai-development",
+    "cloud-migration",
+    "devops-automation",
+    "mergers-acquisitions-tech-integration",
+    "digital-transformation" 
+  ]
+
+  const currentUrl = window.location.href;
+  const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
+
+  menuLinks.forEach(linkItem => {
+    linkItem.classList.remove("active");
+  })
+
+  urls.forEach(url => { 
+    if(currentUrl.includes(url)){
+      console.log("Current URL includes:", url);
+      menuLinks.forEach(linkItem => {
+        if(linkItem.dataset.section === url || linkItem.dataset.subpages === url){
+          linkItem.classList.add("active");
+        }
+      })    
+    }
+  })
+}
