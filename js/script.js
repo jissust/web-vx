@@ -26,17 +26,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  
+document.addEventListener("DOMContentLoaded", () => {  
   selectSection();
-  //const menuItems = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
-  const menuItems = document.querySelectorAll('[data-section="contact"],[data-section="proven-experience-across-industries"]')
+  /*const menuItems = document.querySelectorAll('[data-section="contact"],[data-section="proven-experience-across-industries"]')
   menuItems.forEach(link => {
     link.addEventListener("click", () => {
       setTimeout(() => {
         selectSection();
       }, "250");
     });
+  });*/
+/*});
+
+document.addEventListener("DOMContentLoaded", () => {*/
+  const sections = ["proven-experience-across-industries", "contact"];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+
+        if (entry.isIntersecting) {
+          history.replaceState(null, "", `#${id}`);
+          sections.forEach(section => {
+            document.querySelector(`[data-section="${section}"]`).classList.remove("active");
+          })
+          document.querySelector(`[data-section="${id}"]`).classList.add("active");
+        } else {
+          if (window.location.hash === `#${id}`) {
+            history.replaceState(null, "", " ");
+            document.querySelector(`[data-section="${id}"]`).classList.remove("active");
+          }
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.5,
+    }
+  );
+
+  sections.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) observer.observe(element);
   });
 });
 
