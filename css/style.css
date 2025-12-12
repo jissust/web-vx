@@ -140,6 +140,7 @@ p {
   position: relative;
   overflow: hidden;
   width: fit-content;
+  margin: 0 1px;
 }
 .navbar .dropdown-item {
   font-family: var(--font-base);
