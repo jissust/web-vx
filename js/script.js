@@ -2,45 +2,10 @@
  * Count
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".counter_number");
-
-  counters.forEach((counter) => {
-    const updateCount = () => {
-      const speed = counter.getAttribute("data-speed") || 200;
-      const target = +counter.getAttribute("data-target");
-      const index = +counter.getAttribute("data-index");
-      const count = +counter.innerText;
-      const increment = target / speed;
-
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(updateCount, 20); //
-      } else {
-        counter.innerText = `+${target.toLocaleString()}${
-          index === 3 ? "K" : ""
-        }`; // formato con comas o puntos
-      }
-    };
-
-    updateCount();
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {  
+  counter();
   selectSection();
-  /*const menuItems = document.querySelectorAll('[data-section="contact"],[data-section="proven-experience-across-industries"]')
-  menuItems.forEach(link => {
-    link.addEventListener("click", () => {
-      setTimeout(() => {
-        selectSection();
-      }, "250");
-    });
-  });*/
-/*});
-
-document.addEventListener("DOMContentLoaded", () => {*/
+  /** animaciones con scroll */
   const sections = ["proven-experience-across-industries", "contact"];
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -65,11 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {*/
       threshold: 0.5,
     }
   );
-
+  
   sections.forEach((id) => {
     const element = document.getElementById(id);
     if (element) observer.observe(element);
   });
+
 });
 
 const selectSection = () => {
@@ -82,7 +48,7 @@ const selectSection = () => {
     "cloud-migration",
     "devops-automation",
     "mergers-acquisitions-tech-integration",
-    "digital-transformation" 
+    "digital-transformation"
   ]
 
   const currentUrl = window.location.href;
@@ -104,4 +70,29 @@ const selectSection = () => {
       })    
     }
   })
+}
+
+const counter = () => {
+  const counters = document.querySelectorAll(".counter_number");
+
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const speed = counter.getAttribute("data-speed") || 200;
+      const target = +counter.getAttribute("data-target");
+      const index = +counter.getAttribute("data-index");
+      const count = +counter.innerText;
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20); //
+      } else {
+        counter.innerText = `+${target.toLocaleString()}${
+          index === 3 ? "K" : ""
+        }`;
+      }
+    };
+
+    updateCount();
+  });
 }
