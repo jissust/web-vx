@@ -27,17 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  
   selectSection();
-  const menuItems = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
+  //const menuItems = document.querySelectorAll(".nav-link, .dropdown-item, .navbar-brand");
+  const menuItems = document.querySelectorAll('[data-section="contact"],[data-section="proven-experience-across-industries"]')
   menuItems.forEach(link => {
     link.addEventListener("click", () => {
-      
       setTimeout(() => {
         selectSection();
       }, "250");
     });
   });
-
 });
 
 const selectSection = () => {
@@ -62,9 +62,11 @@ const selectSection = () => {
 
   urls.forEach(url => { 
     if(currentUrl.includes(url)){
-
       menuLinks.forEach(linkItem => {
         if(linkItem.dataset.section === url || linkItem.dataset.subpages === url){
+          if(linkItem.dataset.section === "services"){
+            document.querySelector('[data-section="services"]').classList.add("active");
+          }
           linkItem.classList.add("active");
         }
       })    
