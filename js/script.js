@@ -45,7 +45,7 @@ const selectSection = () => {
     "contact",
     "staff-augmentation",
     "ai-development",
-    "cloud-migration",
+    "cloud-solutions",
     "devops-automation",
     "mergers-acquisitions-tech-integration",
     "digital-transformation"
