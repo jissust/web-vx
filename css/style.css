@@ -875,7 +875,7 @@ textarea {
   padding: 120px 0;
 }
 .accordion_section--bg-cloud-migration {
-  background-image: url("../cloud-migration/img/bg-accordion.webp");
+  background-image: url("../cloud-solutions/img/bg-accordion.webp");
 }
 .accordion_section--devops-automation {
   background-image: url("../devops-automation/img/bg-footer.jpg");
@@ -1244,7 +1244,7 @@ section {
     background-repeat: no-repeat;
   }
   .typical-use-cases {
-    background-image: url(../cloud-migration/img/bg-gradient-left.webp);
+    background-image: url(../cloud-solutions/img/bg-gradient-left.webp);
   }
   .common-devops-use-cases {
     background-image: url("../devops-automation/img/bg-gradient-left.webp");
