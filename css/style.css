@@ -881,7 +881,7 @@ textarea {
   background-image: url("../devops-automation/img/bg-footer.jpg");
 }
 .accordion_section--mergers-acquisitions-tech-integration {
-  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.webp");
+  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.jpg");
 }
 .accordion_section--digital-transformation {
   background-image:url("../digital-transformation/img/bg-accordion.jpg")
@@ -981,7 +981,27 @@ section {
   padding: 1rem;
 }
 .section_hero {
-  padding: 30px 0 70px 0;
+  padding: 40px 0 70px 0;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.section_hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 20%,
+    rgba(255,255,255,2) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
 }
 .common-ai-use-cases,
 .bg-left-gradient {
@@ -989,6 +1009,14 @@ section {
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.ai_development,
+.cloud_solutions,
+.about_us,
+.devops_automation,
+.digital_transformation,
+.mergers_acquisitions_tech_integration {
+  background-image: none;
 }
 .accordion_section--ai-development {
   background-image: url(../ai-development/img/bg-ia-3.jpg);
@@ -1096,7 +1124,7 @@ section {
 }
 
 /* Línea horizontal desktop */
-@media (min-width: 992px) {
+@media (min-width: 992px) {  
   .timeline-container::before {
     content: "";
     position: absolute;
@@ -1167,6 +1195,24 @@ section {
   }
 }
 @media (min-width: 768px) {
+  .ai_development {
+    background-image: url('../ai-development/img/bg-hero.jpeg');
+  }
+  .cloud_solutions {
+    background-image: url('../cloud-solutions/img/bg-hero.jpg');
+  }
+  .about_us {
+    background-image: url('../about-us/img/bg-hero.jpg');
+  }
+  .devops_automation {
+    background-image: url('../devops-automation/img/bg-hero.jpg');
+  }
+  .digital_transformation {
+    background-image: url('../digital-transformation/img/bg-hero.jpg');
+  }
+  .mergers_acquisitions_tech_integration {
+    background-image: url('../mergers-acquisitions-tech-integration/img/bg-hero.jpg');
+  }
   /*.hero h3 {
     font-size: 1.75rem;
   }*/
@@ -1232,6 +1278,10 @@ section {
   }
 }
 @media (min-width: 1200px) {
+  .section_hero {
+    background-size: contain;
+    background-position: right;
+  }
   .common-ai-use-cases {
     background-image: url(../ai-development/img/bg-ia-1.jpg);
     background-position: right;
