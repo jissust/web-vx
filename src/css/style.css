@@ -1001,7 +1001,7 @@ section {
     to right,
     white 0%,
     white 20%,
-    rgba(255,255,255,2) 45%,
+    rgba(255,255,255,2) 55%,
     transparent 70%
   );
   pointer-events: none;
