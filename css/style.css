@@ -881,7 +881,7 @@ textarea {
   background-image: url("../devops-automation/img/bg-footer.jpg");
 }
 .accordion_section--mergers-acquisitions-tech-integration {
-  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.jpg");
+  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.webp");
 }
 .accordion_section--digital-transformation {
   background-image:url("../digital-transformation/img/bg-accordion.jpg")
@@ -1196,7 +1196,7 @@ section {
 }
 @media (min-width: 768px) {
   .ai_development {
-    background-image: url('../ai-development/img/bg-hero.jpeg');
+    background-image: url('../ai-development/img/bg-hero.jpg');
   }
   .cloud_solutions {
     background-image: url('../cloud-solutions/img/bg-hero.jpg');
@@ -1208,10 +1208,10 @@ section {
     background-image: url('../devops-automation/img/bg-hero.jpg');
   }
   .digital_transformation {
-    background-image: url('../digital-transformation/img/bg-hero.jpg');
+    background-image: url('../digital-transformation/img/bg-hero.webp');
   }
   .mergers_acquisitions_tech_integration {
-    background-image: url('../mergers-acquisitions-tech-integration/img/bg-hero.jpg');
+    background-image: url('../mergers-acquisitions-tech-integration/img/bg-hero.webp');
   }
   /*.hero h3 {
     font-size: 1.75rem;
