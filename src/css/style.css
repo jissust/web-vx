@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Articulat CF";
-  src: url("../src/fonts/Articulat_CF_Normal.ttf") format("truetype");
+  src: url("../../src/fonts/Articulat_CF_Normal.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -878,16 +878,16 @@ textarea {
   padding: 120px 0;
 }
 .accordion_section--bg-cloud-migration {
-  background-image: url("../cloud-solutions/img/bg-accordion.webp");
+  background-image: url("../../services/cloud-solutions/img/bg-accordion.webp");
 }
 .accordion_section--devops-automation {
-  background-image: url("../devops-automation/img/bg-footer.jpg");
+  background-image: url("../../services/devops-automation/img/bg-footer.jpg");
 }
 .accordion_section--mergers-acquisitions-tech-integration {
-  background-image: url("../mergers-acquisitions-tech-integration/img/bg-accordion.webp");
+  background-image: url("../../services/mergers-acquisitions-tech-integration/img/bg-accordion.webp");
 }
 .accordion_section--digital-transformation {
-  background-image:url("../digital-transformation/img/bg-accordion.jpg")
+  background-image:url("../../services/digital-transformation/img/bg-accordion.jpg")
 }
 .accordion-button {
   outline: none !important;
@@ -1022,7 +1022,7 @@ section {
   background-image: none;
 }
 .accordion_section--ai-development {
-  background-image: url(../ai-development/img/bg-ia-3.jpg);
+  background-image: url(../../services/ai-development/img/bg-ia-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1199,22 +1199,22 @@ section {
 }
 @media (min-width: 768px) {
   .ai_development {
-    background-image: url('../ai-development/img/bg-hero.jpg');
+    background-image: url('../../services/ai-development/img/bg-hero.jpg');
   }
   .cloud_solutions {
-    background-image: url('../cloud-solutions/img/bg-hero.jpg');
+    background-image: url('../../services/cloud-solutions/img/bg-hero.jpg');
   }
   .about_us {
-    background-image: url('../about-us/img/bg-hero.jpg');
+    background-image: url('../../about-us/img/bg-hero.jpg');
   }
   .devops_automation {
-    background-image: url('../devops-automation/img/bg-hero.jpg');
+    background-image: url('../../services/devops-automation/img/bg-hero.jpg');
   }
   .digital_transformation {
-    background-image: url('../digital-transformation/img/bg-hero.webp');
+    background-image: url('../../services/digital-transformation/img/bg-hero.webp');
   }
   .mergers_acquisitions_tech_integration {
-    background-image: url('../mergers-acquisitions-tech-integration/img/bg-hero.webp');
+    background-image: url('../../services/mergers-acquisitions-tech-integration/img/bg-hero.webp');
   }
   /*.hero h3 {
     font-size: 1.75rem;
@@ -1286,7 +1286,7 @@ section {
     background-position: right;
   }
   .common-ai-use-cases {
-    background-image: url(../ai-development/img/bg-ia-1.jpg);
+    background-image: url(../../services/ai-development/img/bg-ia-1.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1297,19 +1297,19 @@ section {
     background-repeat: no-repeat;
   }
   .typical-use-cases {
-    background-image: url(../cloud-solutions/img/bg-gradient-left.webp);
+    background-image: url(../../services/cloud-solutions/img/bg-gradient-left.webp);
   }
   .common-devops-use-cases {
-    background-image: url("../devops-automation/img/bg-gradient-left.webp");
+    background-image: url("../../services/devops-automation/img/bg-gradient-left.webp");
   }
   .where-we-help-most {
-    background-image: url("../mergers-acquisitions-tech-integration/img/bg-gradient-left.jpg");
+    background-image: url("../../services/mergers-acquisitions-tech-integration/img/bg-gradient-left.jpg");
   }
   .what-we-do {
-    background-image: url("../about-us/img/bg-gradient-left.jpg");
+    background-image: url("../../about-us/img/bg-gradient-left.jpg");
   }
   .common-scenarios {
-    background-image: url("../digital-transformation/img/bg-gradient-left.jpg");
+    background-image: url("../../services/digital-transformation/img/bg-gradient-left.jpg");
   }
   .certifications_col-1 {
     padding-left: calc((100vw - 1140px) / 2);
