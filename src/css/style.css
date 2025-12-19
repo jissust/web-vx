@@ -669,6 +669,16 @@ textarea::-webkit-input-placeholder {
   font-weight: 600;
 }
 /* BLOG */
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.breadcrumb a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-muted);
+}
 .blog {
   padding: 70px 0;
 }
